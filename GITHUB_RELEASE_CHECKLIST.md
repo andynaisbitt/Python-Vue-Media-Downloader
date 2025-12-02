@@ -121,12 +121,18 @@ Every successful download shows a beautiful success modal with:
 
 See [README.md](README.md) for detailed installation instructions.
 
+**⚠️ IMPORTANT:** FFmpeg is required! See setup instructions in [`backend/ffmpeg/README.md`](backend/ffmpeg/README.md)
+
 Quick start:
 ```bash
-# Backend
+# 1. Install FFmpeg (see backend/ffmpeg/README.md)
+# Download from https://www.gyan.dev/ffmpeg/builds/ (Windows)
+# Or install system-wide: brew install ffmpeg (macOS) / apt install ffmpeg (Linux)
+
+# 2. Backend
 cd backend && pip install -r requirements.txt && python run.py
 
-# Frontend (new terminal)
+# 3. Frontend (new terminal)
 cd frontend && npm install && npm run dev
 ```
 

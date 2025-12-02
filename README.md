@@ -97,7 +97,7 @@ graph LR
 ### Prerequisites
 - **Python 3.8+** ([Download](https://www.python.org/downloads/))
 - **Node.js 16+** ([Download](https://nodejs.org/))
-- **FFmpeg** (included in `/backend/ffmpeg/` or install system-wide)
+- **FFmpeg** ⚠️ **REQUIRED** - See [FFmpeg Setup](#ffmpeg-setup) below
 
 ### Quick Start
 
@@ -139,6 +139,62 @@ npm run dev
 ```
 
 Frontend will run at **http://localhost:5173**
+
+#### 3️⃣ FFmpeg Setup
+
+**⚠️ IMPORTANT:** FFmpeg is **required** for video/audio processing.
+
+**Option 1: Local Installation (Recommended)**
+```bash
+# 1. Download FFmpeg for your platform:
+#    Windows: https://www.gyan.dev/ffmpeg/builds/ (ffmpeg-release-essentials.zip)
+#    macOS: https://evermeet.cx/ffmpeg/
+#    Linux: Use package manager (see below)
+
+# 2. Extract binaries to backend/ffmpeg/:
+#    - ffmpeg.exe (or ffmpeg on macOS/Linux)
+#    - ffprobe.exe (or ffprobe on macOS/Linux)
+
+# 3. Verify:
+# Windows:
+.\backend\ffmpeg\ffmpeg.exe -version
+
+# macOS/Linux:
+./backend/ffmpeg/ffmpeg -version
+chmod +x backend/ffmpeg/ffmpeg  # Make executable if needed
+```
+
+**Option 2: System-Wide Installation**
+```bash
+# Windows (Chocolatey)
+choco install ffmpeg
+
+# macOS (Homebrew)
+brew install ffmpeg
+
+# Linux (Ubuntu/Debian)
+sudo apt update && sudo apt install ffmpeg
+```
+
+**📝 Note:** FFmpeg binaries are excluded from Git due to their large size (~100-200 MB). Each user must download them separately.
+
+**Full instructions:** See [`backend/ffmpeg/README.md`](backend/ffmpeg/README.md)
+
+#### 🧪 Verify Installation
+
+Run the verification script to check if everything is set up correctly:
+
+```bash
+python verify-setup.py
+```
+
+This will check:
+- Python version (3.8+)
+- Node.js and npm
+- FFmpeg installation
+- Python packages
+- Frontend packages
+- Directory structure
 
 ---
 

@@ -52,3 +52,10 @@ ENV/
 node_modules/
 
 downloads/
+
+# FFmpeg binaries (large files - users download separately)
+backend/ffmpeg/*.exe
+backend/ffmpeg/*.dll
+backend/ffmpeg/ffmpeg.exe
+backend/ffmpeg/ffprobe.exe
+backend/ffmpeg/ffplay.exe
