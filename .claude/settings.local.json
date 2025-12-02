@@ -13,7 +13,8 @@
       "Bash(taskkill /F /PID 25160)",
       "Bash(taskkill //F //PID 25160)",
       "Bash(timeout 5 bash:*)",
-      "Bash(taskkill:*)"
+      "Bash(taskkill:*)",
+      "Bash(git rm:*)"
     ],
     "deny": [],
     "ask": []
