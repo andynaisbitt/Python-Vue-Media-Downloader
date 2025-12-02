@@ -344,22 +344,6 @@ See [DOWNLOAD_UX_IMPROVEMENTS.md](DOWNLOAD_UX_IMPROVEMENTS.md) for detailed chan
 
 ---
 
-## 🗺️ Roadmap
-
-### v1.1 (Planned)
-- [ ] Backend download cancellation support
-- [ ] Pause/resume functionality
-- [ ] Download history persistence (SQLite)
-- [ ] Playlist organization and editing
-- [ ] Download speed limiting
-
-### v2.0 (Future)
-- [ ] User accounts and authentication
-- [ ] Cloud storage integration
-- [ ] Video format conversion
-- [ ] Scheduled downloads
-- [ ] Mobile app (React Native)
-
 ---
 
 ## 🤝 Contributing

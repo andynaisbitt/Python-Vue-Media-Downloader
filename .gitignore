@@ -62,3 +62,6 @@ backend/ffmpeg/*.dll
 *.zip
 latest*.zip
 *backup*.zip
+
+# PowerShell scripts
+*.ps1
