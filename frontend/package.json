@@ -1,0 +1,32 @@
+{
+  "name": "youtube-downloader",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A sleek, modern web application for downloading YouTube videos with exceptional UX",
+  "author": "Your Name",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.3.11",
+    "vue-router": "^4.2.5",
+    "pinia": "^2.1.7",
+    "@vueuse/core": "^10.7.0",
+    "@vueuse/motion": "^2.0.0",
+    "gsap": "^3.12.4",
+    "axios": "^1.6.2",
+    "@headlessui/vue": "^1.7.16",
+    "lucide-vue-next": "^0.298.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.2",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.6",
+    "vite": "^5.0.8"
+  }
+}
