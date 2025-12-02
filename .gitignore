@@ -56,6 +56,8 @@ downloads/
 # FFmpeg binaries (large files - users download separately)
 backend/ffmpeg/*.exe
 backend/ffmpeg/*.dll
-backend/ffmpeg/ffmpeg.exe
-backend/ffmpeg/ffprobe.exe
-backend/ffmpeg/ffplay.exe
+
+# Large backup files
+*.zip
+latest*.zip
+*backup*.zip
